@@ -90,7 +90,6 @@ inputEl.addEventListener('keydown',addItem)
 
 ///task#3
 
-///task#2
 
 var container = document.querySelector('#add-guest')
 var inputContainer = container.querySelector('.answer-box')
@@ -120,14 +119,16 @@ var addItem = function(keyEvent) {
 
 var xButton = document.createElement('button') 
 xButton.textContent = "X"
-xButton.style.width = "2%"
-xButton.style.height = ".05%"
 xButton.style.font = "medium"
 
 
 newLi.appendChild(xButton)
 
 xButton.style.background = "red"
+xButton.style.height = "20px"
+xButton.style.width = "20px"
+xButton.style.padding = "0px"
+xButton.style.margin = "5px"
 
 var removeItem = function() {
    itemsList.removeChild(newLi)
